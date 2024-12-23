@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS CLASS</h1>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <script>
+        class student
+        {
+            constructor(name,grade)
+            {
+                this.name=name;
+                this.grade=grade;
+            }
+        }
+        student1=new student("Suyog",8);
+        document.getElementById("para1").innerHTML="My name is "+ student1.name+ ". I study in grade "+student1.grade;
+        student2=new student("Sashwat",9);
+        document.getElementById("para2").innerHTML="My name is "+ student2.name+ ". I study in grade "+student2.grade;
+    </script>
+</body>
+</html>
